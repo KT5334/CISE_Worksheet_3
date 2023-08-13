@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src":"./mern_a_to_z_client/app.js",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"app.js"
+        }
+    ]
+}
